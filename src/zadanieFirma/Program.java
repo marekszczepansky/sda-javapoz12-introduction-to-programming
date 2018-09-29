@@ -10,17 +10,24 @@ public class Program {
     System.out.println("Podaj nazwę firmy: ");
     String nazwaFirmy = scanner.nextLine();
     Firma firma = new Firma(nazwaFirmy);
-    System.out.println("Wybierz operację");
-    System.out.println("1. Wypisz wszystkich pracownikow");
-    System.out.println("2. Dodaj nowego pracownika");
-    System.out.println("3. Usuń pracownika");
-    System.out.println("0. Wyjście z programu");
-    int wybor = scanner.nextInt();
+
+    int wybor = -1;
     while (wybor != 0) {
+      System.out.println("Wybierz operację");
+      System.out.println("1. Wypisz wszystkich pracownikow");
+      System.out.println("2. Dodaj nowego pracownika");
+      System.out.println("3. Usuń pracownika");
+      System.out.println("0. Wyjście z programu");
+      wybor = scanner.nextInt();
       switch (wybor) {
         case 1: {
           Pracownik[] pracownicy = firma.getPracownicy();
-          for (Pracownik p : pracownicy) {
+          if (firma.getLiczbaPracownikow() == 0) {
+            System.out.println("Brak pracownikow - wybierz opcję 2, aby dodac nowego");
+            break;
+          }
+          for (int i = 0; i < firma.getLiczbaPracownikow(); i++) {
+            Pracownik p = pracownicy[i];
             String opisPracownika = String.format(
                 "Imię: %s, Nazwisko: %s, e-mail: %s, pensja: %f",
                 p.getImie(),
@@ -29,8 +36,29 @@ public class Program {
                 p.getPensja()
             );
             System.out.println(opisPracownika);
-            break;
           }
+          break;
+        }
+        case 2: {
+          // pobieranie danych o pracowniku
+          System.out.println("Podaj imie");
+          String imie = scanner.next();
+          System.out.println("Podaj nazwisko");
+          String nazwisko = scanner.next();
+          System.out.println("Podaj email");
+          String email = scanner.next();
+          System.out.println("Podaj pensję");
+          double pensja = scanner.nextDouble();
+
+          // mamy dane, wiec tworzymy obiekt
+          // imie i nazwisko z wykorzystaniem konstruktora
+          // email i pensja przez setter
+          Pracownik nowyPracownik = new Pracownik(imie, nazwisko);
+          nowyPracownik.setEmail(email);
+          nowyPracownik.setPensja(pensja);
+
+          // obiekt pracownika jest utworzony, dodajemy do firmy
+          firma.dodajPracownika(nowyPracownik);
         }
       }
     }
