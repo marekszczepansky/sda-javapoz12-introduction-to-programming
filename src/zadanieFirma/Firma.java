@@ -37,6 +37,12 @@ public class Firma {
     return false;
   }
 
+  /**
+   * Usuwa pracownika i zwraca referencje do tego pracownika lub zwraca null, jesli nie znaleziono
+   *
+   * @param id
+   * @return usuwanego pracownika lub null jesli nie znaleziono
+   */
   public Pracownik usunPracownika(int id) {
     // todo: Zaimplementuj kiedy pracownicy będą mieli swoje ID
     Pracownik pracownikDoUsuniecia = null;
@@ -50,8 +56,17 @@ public class Firma {
       }
     }
     // todo: napraw tablicę
+    Pracownik[] nowaTablica = new Pracownik[MAKSYMALNA_LICZBA_PRACOWNIKOW];
 
-
+    // index - wskaźnik w "nowejTablicy" na pierwsze wolne miejsce - zwiekszany tylko, jesli spotkamy pracownika w starej tablicy (a nie null'a)
+    int index = 0;
+    for (int i = 0; i < pracownicy.length; i++) {
+      if (pracownicy[i] != null) {
+        nowaTablica[index] = pracownicy[i];
+        index++;
+      }
+    }
+    pracownicy = nowaTablica;
     return pracownikDoUsuniecia;
   }
 
