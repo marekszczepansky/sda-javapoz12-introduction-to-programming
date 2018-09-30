@@ -39,7 +39,20 @@ public class Firma {
 
   public Pracownik usunPracownika(int id) {
     // todo: Zaimplementuj kiedy pracownicy będą mieli swoje ID
-    return null;
+    Pracownik pracownikDoUsuniecia = null;
+    for (int i = 0; i < liczbaPracownikow; i++) {
+      if (pracownicy[i].getId() == id) {
+        // pracownik znaleziony
+        pracownikDoUsuniecia = pracownicy[i];
+        pracownicy[i] = null;
+        liczbaPracownikow--;
+        break;
+      }
+    }
+    // todo: napraw tablicę
+
+
+    return pracownikDoUsuniecia;
   }
 
 

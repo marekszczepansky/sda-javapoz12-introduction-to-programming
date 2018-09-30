@@ -61,8 +61,14 @@ public class Program {
           firma.dodajPracownika(nowyPracownik);
           break;
         case 3:
-          System.out.println("Funkcjonalnosc w przygotowaniu....");
-
+          System.out.println("Podaj id pracownika do usuniecia");
+          int idDoUsuniecia = scanner.nextInt();
+          Pracownik usunietyPracownik = firma.usunPracownika(idDoUsuniecia);
+          System.out.println("Pracownik: "
+              + usunietyPracownik.getId()
+              + ", "
+              + usunietyPracownik.getNazwisko()
+              + " został usunięty");
           break;
         default:
           System.out.println("Nie ma takiej operacji - wybierz ponownie");
