@@ -1,5 +1,7 @@
 package zadanieFirma;
 
+import sun.plugin.dom.exception.InvalidAccessException;
+
 public class Firma {
   private static final int MAKSYMALNA_LICZBA_PRACOWNIKOW = 100;
   private String nazwaFirmy;
@@ -33,6 +35,11 @@ public class Firma {
       return true;
     }
     return false;
+  }
+
+  public Pracownik usunPracownika(int id) {
+    // todo: Zaimplementuj kiedy pracownicy będą mieli swoje ID
+    return null;
   }
 
 

@@ -1,5 +1,7 @@
 package zadanieFirma;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Program {
@@ -9,6 +11,7 @@ public class Program {
     System.out.println("Program do zarządzania firmą");
     System.out.println("Podaj nazwę firmy: ");
     String nazwaFirmy = scanner.nextLine();
+
     Firma firma = new Firma(nazwaFirmy);
 
     int wybor = -1;
@@ -19,8 +22,13 @@ public class Program {
       System.out.println("3. Usuń pracownika");
       System.out.println("0. Wyjście z programu");
       wybor = scanner.nextInt();
+      // pobieranie danych o pracowniku
+      // mamy dane, wiec tworzymy obiekt
+      // imie i nazwisko z wykorzystaniem konstruktora
+      // email i pensja przez setter
+      // obiekt pracownika jest utworzony, dodajemy do firmy
       switch (wybor) {
-        case 1: {
+        case 1:
           Pracownik[] pracownicy = firma.getPracownicy();
           if (firma.getLiczbaPracownikow() == 0) {
             System.out.println("Brak pracownikow - wybierz opcję 2, aby dodac nowego");
@@ -38,9 +46,7 @@ public class Program {
             System.out.println(opisPracownika);
           }
           break;
-        }
-        case 2: {
-          // pobieranie danych o pracowniku
+        case 2:
           System.out.println("Podaj imie");
           String imie = scanner.next();
           System.out.println("Podaj nazwisko");
@@ -49,19 +55,19 @@ public class Program {
           String email = scanner.next();
           System.out.println("Podaj pensję");
           double pensja = scanner.nextDouble();
-
-          // mamy dane, wiec tworzymy obiekt
-          // imie i nazwisko z wykorzystaniem konstruktora
-          // email i pensja przez setter
           Pracownik nowyPracownik = new Pracownik(imie, nazwisko);
           nowyPracownik.setEmail(email);
           nowyPracownik.setPensja(pensja);
-
-          // obiekt pracownika jest utworzony, dodajemy do firmy
           firma.dodajPracownika(nowyPracownik);
-        }
+          break;
+        case 3:
+          System.out.println("Funkcjonalnosc w przygotowaniu....");
+
+          break;
+        default:
+          System.out.println("Nie ma takiej operacji - wybierz ponownie");
+          break;
       }
     }
-
   }
 }

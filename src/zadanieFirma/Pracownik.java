@@ -1,6 +1,8 @@
 package zadanieFirma;
 
 public class Pracownik {
+  private static int idGenerator = 1;
+  private int id;
   private String imie;
   private String nazwisko;
   private String adres;
@@ -8,8 +10,13 @@ public class Pracownik {
   private double pensja;
 
   public Pracownik(String imie, String nazwisko) {
+    this.id = idGenerator++;
     this.imie = imie;
     this.nazwisko = nazwisko;
+  }
+
+  public int getId() {
+    return this.id;
   }
 
   public String getImie() {
