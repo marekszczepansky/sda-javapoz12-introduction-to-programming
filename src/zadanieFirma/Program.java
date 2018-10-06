@@ -31,7 +31,7 @@ public class Program {
           zapiszDoPliku(firma);
           break;
         case 5:
-          System.out.println("Funkcjonalnosc w przygotowaniu...");
+          odczytajPracownikow();
           break;
         default:
           System.out.println("Nie ma takiej operacji - wybierz ponownie");
@@ -40,6 +40,13 @@ public class Program {
       System.out.println();
       System.out.println();
     }
+  }
+
+  private static void odczytajPracownikow() {
+    System.out.println("Podaj sciezkę do pliku");
+    String sciezka = scanner.next();
+    Pracownik[] pracownicyZPliku = CompanyUtils.odczytajPracownikow(sciezka);
+    //todo: jak uaktualnić pracownikow?
   }
 
   private static void zapiszDoPliku(Firma firma) {
