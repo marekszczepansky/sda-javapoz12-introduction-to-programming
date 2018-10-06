@@ -27,6 +27,12 @@ public class Program {
         case 3:
           usunPracownika(firma);
           break;
+        case 4:
+          zapiszDoPliku(firma);
+          break;
+        case 5:
+          System.out.println("Funkcjonalnosc w przygotowaniu...");
+          break;
         default:
           System.out.println("Nie ma takiej operacji - wybierz ponownie");
           break;
@@ -34,6 +40,25 @@ public class Program {
       System.out.println();
       System.out.println();
     }
+  }
+
+  private static void zapiszDoPliku(Firma firma) {
+    System.out.println("Podaj ścieżkę do pliku...");
+    String sciezka = scanner.next();
+    boolean status = CompanyUtils.zapiszPracownikow(firma.getPracownicy(), sciezka);
+    // Pierwszy sposób
+    /*if (status) {
+      System.out.println("Zapis zakończony sukcesem");
+    } else {
+      System.out.println("Nie udało się zapisac do pliku");
+    }*/
+
+    // Drugi sposob
+    String tekst = status ? "Zapis zakończony sukcesem" : "Nie udało się zapisac do pliku";
+    System.out.println(tekst);
+
+    // 3 sposob to samo co wyżej, bez tworzenia zmiennej
+    // System.out.println(status ? "Zapis zakończony sukcesem" : "Nie udało się zapisac do pliku");
   }
 
   private static void usunPracownika(Firma firma) {
@@ -91,6 +116,8 @@ public class Program {
     System.out.println("1. Wypisz wszystkich pracownikow");
     System.out.println("2. Dodaj nowego pracownika");
     System.out.println("3. Usuń pracownika");
+    System.out.println("4. Zapisz pracownikow do pliku");
+    System.out.println("5. Wczytaj pracownikow z pliku");
     System.out.println("0. Wyjście z programu");
   }
 }

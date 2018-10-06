@@ -1,0 +1,2 @@
+1, jan, nowak, nowak@sda.pl, null, 1234.000000
+2, adam, adamiak, adamiak@sda.pl, null, 1234.000000

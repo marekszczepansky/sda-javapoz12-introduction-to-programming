@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0d3685c-d43b-41d3-83e4-2819f042cd7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/enumexample/Pizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enumexample/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enumexample/Rozmiar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lorem-ipsum.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/matematyka/DimensionNotPositiveException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/matematyka/Kalkulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pliki/JavaNio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pliki/PlikiIntro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pliki/TryWithResourcesExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zadanieFirma/FileType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0fd771f3af8f3ed09bef43a1157e8e05684d6930" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0fd771f3af8f3ed09bef43a1157e8e05684d6930" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zadanieFirma/CompanyUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matematyka/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matematyka/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matematyka/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matematyka/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matematyka/Prostokat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matematyka/Prostokat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zadanieFirma/Pracownik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zadanieFirma/Pracownik.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/zadanieFirma/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zadanieFirma/Program.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -95,27 +82,27 @@
           <entry key="FileNotFoundException" value="1" />
           <entry key="IllegalArgumentException" value="1" />
           <entry key="class" value="3" />
-          <entry key="java" value="45" />
-          <entry key="txt" value="4" />
+          <entry key="java" value="54" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="45" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="JAVA" value="54" />
+          <entry key="PLAIN_TEXT" value="5" />
           <entry key="UML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2710" />
+          <entry key="java" value="3859" />
           <entry key="txt" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2710" />
+          <entry key="JAVA" value="3859" />
           <entry key="PLAIN_TEXT" value="69" />
         </counts>
       </usages-collector>
@@ -130,16 +117,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zadanieFirma/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="239">
+              <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#usunPracownika#0;class#Program#0" />
                 <element signature="method#drukujPracownikow#0;class#Program#0" />
-                <element signature="method#drukujMenu#0;class#Program#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/zadanieFirma/CompanyUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -177,7 +174,6 @@
         <option value="$PROJECT_DIR$/src/intro/Pracownik.java" />
         <option value="$PROJECT_DIR$/src/company/Pracownik.java" />
         <option value="$PROJECT_DIR$/src/firma/Pracownik.java" />
-        <option value="$PROJECT_DIR$/src/zadanieFirma/Pracownik.java" />
         <option value="$PROJECT_DIR$/src/zadanieFirma/Firma.java" />
         <option value="$PROJECT_DIR$/src/dziedziczenie/Dog.java" />
         <option value="$PROJECT_DIR$/src/dziedziczenie/Animal.java" />
@@ -193,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/enumexample/Pizza.java" />
         <option value="$PROJECT_DIR$/src/enumexample/Program.java" />
         <option value="$PROJECT_DIR$/src/zadanieFirma/FileType.java" />
-        <option value="$PROJECT_DIR$/src/zadanieFirma/Program.java" />
         <option value="$PROJECT_DIR$/src/matematyka/Kalkulator.java" />
         <option value="$PROJECT_DIR$/src/matematyka/Circle.java" />
         <option value="$PROJECT_DIR$/src/matematyka/Prostokat.java" />
@@ -203,6 +198,9 @@
         <option value="$PROJECT_DIR$/src/pliki/PlikiIntro.java" />
         <option value="$PROJECT_DIR$/src/pliki/TryWithResourcesExample.java" />
         <option value="$PROJECT_DIR$/src/pliki/JavaNio.java" />
+        <option value="$PROJECT_DIR$/src/zadanieFirma/Pracownik.java" />
+        <option value="$PROJECT_DIR$/src/zadanieFirma/Program.java" />
+        <option value="$PROJECT_DIR$/src/zadanieFirma/CompanyUtils.java" />
       </list>
     </option>
   </component>
@@ -237,12 +235,6 @@
               <item name="sda-javapoz12-introduction-to-programming" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="sda-javapoz12-introduction-to-programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sda-javapoz12-introduction-to-programming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="zadanieFirma" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -253,7 +245,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538828556591" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538832099947" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -402,12 +394,12 @@
       <workItem from="1538214415078" duration="5495000" />
       <workItem from="1538223986535" duration="12427000" />
       <workItem from="1538298540193" duration="11958000" />
-      <workItem from="1538821602373" duration="5405000" />
+      <workItem from="1538821602373" duration="8637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48791000" />
+    <option name="totallyTimeSpent" value="52023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,7 +414,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.192031" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23464306" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -432,13 +424,13 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26486486" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30810812" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.0854054" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.15351352" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.45297298" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32864866" />
       <window_info anchor="bottom" id="SonarLint" order="11" weight="0.24216217" />
@@ -466,7 +458,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26486486" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26918918" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.0854054" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -558,20 +550,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/oopintro/Aplikacja.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="642" column="25" selection-start-line="642" selection-start-column="25" selection-end-line="642" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/intro/Program.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -611,17 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zadanieFirma/Pracownik.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding>
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dziedziczenie/Animal.java" />
     <entry file="file://$PROJECT_DIR$/src/dziedziczenie/Dog.java" />
     <entry file="file://$PROJECT_DIR$/src/dziedziczenie/Osoba.java">
@@ -635,13 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1068,13 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/nio/file/Files.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="3208" column="13" lean-forward="true" selection-start-line="3202" selection-start-column="11" selection-end-line="3208" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pliki/JavaNio.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -1106,15 +1059,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/nio/file/Files.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="2858" column="36" lean-forward="true" selection-start-line="2858" selection-start-column="36" selection-end-line="2858" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="235" column="39" selection-start-line="235" selection-start-column="39" selection-end-line="235" selection-end-column="39" />
+          <folding>
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadanieFirma/Pracownik.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="61" column="11" lean-forward="true" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+          <folding>
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prac.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/zadanieFirma/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="239">
+          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#usunPracownika#0;class#Program#0" />
             <element signature="method#drukujPracownikow#0;class#Program#0" />
-            <element signature="method#drukujMenu#0;class#Program#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zadanieFirma/CompanyUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

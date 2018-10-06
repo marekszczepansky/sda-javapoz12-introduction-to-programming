@@ -58,4 +58,16 @@ public class Pracownik {
   public void setPensja(double pensja) {
     this.pensja = pensja;
   }
+
+  @Override
+  public String toString() {
+    return String.format("%d, %s, %s, %s, %s, %f",
+        id,
+        imie,
+        nazwisko,
+        email,
+        adres,
+        pensja
+    );
+  }
 }
