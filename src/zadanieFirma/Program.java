@@ -1,7 +1,5 @@
 package zadanieFirma;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Program {
@@ -10,6 +8,7 @@ public class Program {
   public static void main(String[] args) {
     System.out.println("Program do zarządzania firmą");
     System.out.println("Podaj nazwę firmy: ");
+
     String nazwaFirmy = scanner.nextLine();
 
     Firma firma = new Firma(nazwaFirmy);

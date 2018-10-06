@@ -5,6 +5,9 @@ public class Prostokat {
   public double bokB;
 
   public Prostokat(double bokA, double bokB) {
+    if (bokA <= 0 || bokB <= 0) {
+      throw new DimensionNotPositiveException("Bok figury musi byc dodatni");
+    }
     this.bokA = bokA;
     this.bokB = bokB;
   }

@@ -1,7 +1,17 @@
 
+V
+squid:S106""9Replace this use of System.out or System.err by a logger.(¤™ï×8˜¼è¨â,
+V
+squid:S106%"9Replace this use of System.out or System.err by a logger.(ı¸ıÄ8îµˆÅä,
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(¢ãÄğ8Ü…úÄä,
+Lsquid:S1481".Remove this unused "prostokat" local variable.(µÙü›8÷£Æä,
+fsquid:S2583 "CChange this condition so that it does not always evaluate to "true"(™¹¬ÿÿÿÿÿ8¤Æ Åä,
 [
-squid:S106	"9Replace this use of System.out or System.err by a logger.(ıÖ¸·øÿÿÿÿ8ô³Ø§â,
+squid:S106	"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ØàËÆä,
 V
-squid:S106"9Replace this use of System.out or System.err by a logger.(º‡æÊ8ãÏÏ¨â,
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(¤™ï×8˜¼è¨â,
+squid:S106#"9Replace this use of System.out or System.err by a logger.(º‡æÊ8ãÏÏ¨â,
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(¤×›ßşÿÿÿÿ8ˆ·…Åä,
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ıÖ¸·øÿÿÿÿ8ô³Ø§â,
