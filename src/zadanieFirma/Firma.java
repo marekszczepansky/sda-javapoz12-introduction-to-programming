@@ -2,13 +2,17 @@ package zadanieFirma;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
 @XmlRootElement
 public class Firma {
   private static final int MAKSYMALNA_LICZBA_PRACOWNIKOW = 100;
+  @XmlAttribute(name = "nazwa")
   private String nazwaFirmy;
+  @XmlElement(name = "pracownik")
+  @XmlElementWrapper(name = "pracownicy")
   private Pracownik[] pracownicy;
   private int liczbaPracownikow; // pokazuje aktualny stan pracownikow i index w tablicy, gdzie wstawic nowego pracownika
 
@@ -22,7 +26,7 @@ public class Firma {
   }
 
   // getter dla pola nazwaFirmy -> bez settera
-  @XmlAttribute(name = "nazwa")
+
   public String getNazwaFirmy() {
     return this.nazwaFirmy;
   }
@@ -33,7 +37,7 @@ public class Firma {
   }
 
   // getter dla pracownikow
-  @XmlElement
+
   public Pracownik[] getPracownicy() {
     return this.pracownicy;
   }

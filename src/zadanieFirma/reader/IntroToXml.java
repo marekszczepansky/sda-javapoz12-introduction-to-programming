@@ -17,6 +17,7 @@ public class IntroToXml {
     pracownik.setEmail("kowalski@sda.pl");
 
     firma.dodajPracownika(pracownik);
+    firma.dodajPracownika(pracownik);
 
     JAXBContext context = JAXBContext.newInstance(Firma.class);
     Marshaller marshaller = context.createMarshaller();
