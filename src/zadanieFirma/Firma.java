@@ -1,12 +1,19 @@
 package zadanieFirma;
 
-import sun.plugin.dom.exception.InvalidAccessException;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 
+@XmlRootElement
 public class Firma {
   private static final int MAKSYMALNA_LICZBA_PRACOWNIKOW = 100;
   private String nazwaFirmy;
   private Pracownik[] pracownicy;
   private int liczbaPracownikow; // pokazuje aktualny stan pracownikow i index w tablicy, gdzie wstawic nowego pracownika
+
+  public Firma() {
+  }
 
   public Firma(String nazwaFirmy) {
     this.liczbaPracownikow = 0;
@@ -15,6 +22,7 @@ public class Firma {
   }
 
   // getter dla pola nazwaFirmy -> bez settera
+  @XmlAttribute(name = "nazwa")
   public String getNazwaFirmy() {
     return this.nazwaFirmy;
   }
@@ -25,6 +33,7 @@ public class Firma {
   }
 
   // getter dla pracownikow
+  @XmlElement
   public Pracownik[] getPracownicy() {
     return this.pracownicy;
   }

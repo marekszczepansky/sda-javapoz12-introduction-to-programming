@@ -1,12 +1,14 @@
 package zadanieFirma;
 
+import zadanieFirma.reader.EmployeeReader;
+
 import java.util.Scanner;
 
 public class Program {
   private static Scanner scanner = new Scanner(System.in);
 
   public static void main(String[] args) {
-    System.out.println("Program do zarządzania firmą");
+    System.out.println("IntroToXml do zarządzania firmą");
     System.out.println("Podaj nazwę firmy: ");
 
     String nazwaFirmy = scanner.nextLine();
@@ -45,7 +47,9 @@ public class Program {
   private static void odczytajPracownikow(Firma firma) {
     System.out.println("Podaj sciezkę do pliku");
     String sciezka = scanner.next();
-    Pracownik[] pracownicyZPliku = CompanyUtils.odczytajPracownikow(sciezka);
+
+    EmployeeReader employeeReader = EmployeeReaderFactory.createEmployeeReader(sciezka);
+    Pracownik[] pracownicyZPliku = employeeReader.odczytajPracownikow();
     for (Pracownik p : pracownicyZPliku) {
       if (p != null) {
         firma.dodajPracownika(p);

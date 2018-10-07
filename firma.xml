@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<firma nazwa="sda">
+    <pracownicy id="1">
+        <email>kowalski@sda.pl</email>
+        <tojestinnanazwa>Jan</tojestinnanazwa>
+        <nazwisko>Kowalski</nazwisko>
+        <pensja>1234.0</pensja>
+    </pracownicy>
+</firma>
