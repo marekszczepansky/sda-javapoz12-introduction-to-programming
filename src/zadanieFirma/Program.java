@@ -31,7 +31,7 @@ public class Program {
           zapiszDoPliku(firma);
           break;
         case 5:
-          odczytajPracownikow();
+          odczytajPracownikow(firma);
           break;
         default:
           System.out.println("Nie ma takiej operacji - wybierz ponownie");
@@ -42,11 +42,15 @@ public class Program {
     }
   }
 
-  private static void odczytajPracownikow() {
+  private static void odczytajPracownikow(Firma firma) {
     System.out.println("Podaj sciezkę do pliku");
     String sciezka = scanner.next();
     Pracownik[] pracownicyZPliku = CompanyUtils.odczytajPracownikow(sciezka);
-    //todo: jak uaktualnić pracownikow?
+    for (Pracownik p : pracownicyZPliku) {
+      if (p != null) {
+        firma.dodajPracownika(p);
+      }
+    }
   }
 
   private static void zapiszDoPliku(Firma firma) {

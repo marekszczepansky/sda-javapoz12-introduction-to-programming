@@ -32,20 +32,25 @@ public class CompanyUtils {
   public static Pracownik[] odczytajPracownikow(String sciezka) {
     Pracownik[] wynik = new Pracownik[100];
     try {
+      // odczytujemy z pliku - kazda linia w pliku to informacja o pracowniku
+      // z każdej linii tworzymy nowy obiekt pracownika
+      // dane są zapisane w poniższym formacie:
+      // id, imie, nazwisko, email, adres, pensja
+      // przecinek jest separatorem pola
       BufferedReader reader = Files.newBufferedReader(Paths.get(sciezka));
+      int index = 0;
       String line = null;
       while ((line = reader.readLine()) != null) {
-        System.out.println(line);
-        //todo: zaimplementuj utworzenie obiektu Pracownik z lini z pliku
         String[] split = line.split(",");
-        // id split[0]
-        // imie split[1]
-        // nazwisko split[2]
-        // email split[3]
+        Pracownik pracownik = new Pracownik(split[1], split[2]);
+        pracownik.setEmail(split[3]);
+        pracownik.setAdres(split[4]);
+        pracownik.setPensja(Double.valueOf(split[5]));
+        wynik[index++] = pracownik;
       }
+      return wynik;
     } catch (IOException e) {
-      return new Pracownik[100];
+      return new Pracownik[0];
     }
-    return null;
   }
 }
